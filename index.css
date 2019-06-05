@@ -1,0 +1,58 @@
+
+
+html{
+    font: 20px sans-serif;  
+}
+
+body {
+    background-color: #2222;
+}
+
+.title{
+    font-style: italic;
+    
+}
+
+.main-header {
+    
+    display: flex;
+    justify-content: space-between;
+    background-image: url(machineLanguage.jpg);
+    background-size:contain;
+    
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    align-items:center;
+}
+
+.nav-link_list{
+    padding: 0.4rem;
+}
+
+a{
+    text-decoration: none;
+    list-style: none;
+}
+
+article{
+    background-color: #1111;
+}
+
+
+.hero-image{
+    background-image: url(NY.jpg);
+    background-size: cover;
+    height : 50vh ;
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+}
+
+img {
+    width: 10vw;
+    height: 30vh;
+
+}
