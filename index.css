@@ -1,4 +1,8 @@
-
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
 html{
     font: 20px sans-serif;  
@@ -9,7 +13,10 @@ body {
 }
 
 .title{
-    font-style: italic;
+    font-style: oblique;
+    color: orangered;
+    /* size: 189rem; */
+    
     
 }
 
@@ -19,22 +26,32 @@ body {
     justify-content: space-between;
     background-image: url(machineLanguage.jpg);
     background-size:contain;
-    
+    position: fixed;
+    width: 100vw;
+   
 }
 
 nav ul{
     display: flex;
     list-style: none;
     align-items:center;
+   
 }
 
 .nav-link_list{
     padding: 0.4rem;
+    
 }
 
 a{
     text-decoration: none;
     list-style: none;
+    color: rgb(51, 255, 0);
+    font-size: 1rem;
+}
+
+a:hover{ color: yellow;
+
 }
 
 article{
@@ -49,10 +66,84 @@ article{
     display: flex;
     align-items:center;
     flex-direction: column;
+    justify-content: center;
 }
 
 img {
     width: 10vw;
     height: 30vh;
+
+}
+
+.profile-picture{
+    border-style: solid;
+    border: 1px red solid;
+    margin-bottom: none;
+}
+
+
+.mug-shot{
+    margin: 1rem;
+    
+
+}
+
+.container{
+    padding: 1rem 1rem;
+}
+
+ul{
+    list-style-type: none;
+}
+
+/* contact page */
+
+
+
+.contact-links{
+display: flex;
+background-image: url(link.jpg);
+height: 100vh;
+background-size: contain;
+justify-content: center;
+align-items: center;
+
+}
+
+.contact-items {
+    text-align: center;
+    list-style: none;
+    font-size: xx-large;
+    border-style: solid;
+    border: 5px rgba(231, 228, 8, 0.822) solid;
+     
+}
+
+
+/* project page */
+
+.virtualPetImage {
+    width: 800px;
+    height: 500px;
+}
+
+.universityImage {
+    width: 800px;
+    height: 500px;  
+}
+
+.FortuneTellerImage {
+    width: 800px;
+    height: 400px;
+}
+
+.project{
+    padding-top: 1rem;
+}
+
+footer{
+    display: flex;
+    background-color: #2222;
+    justify-content: center;
 
 }
