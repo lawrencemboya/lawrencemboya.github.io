@@ -5,7 +5,17 @@
 }
 
 html{
-    font: 20px sans-serif;  
+    --red: #FE7F2D;
+    --yellow: #FCCA46;
+    --green: #A1C181;
+    --blue: #619B8A;
+
+    --light: #eee;
+    --mid: #676767;
+    --dark: #1D1A31;
+
+    color: var(--dark);
+    font: 20px/1 sans-serif;
 }
 
 body {
@@ -24,8 +34,8 @@ body {
     
     display: flex;
     justify-content: space-between;
-    background-image: url(machineLanguage.jpg);
-    background-size:contain;
+    background-image: linear-gradient(45deg, var(--blue), var(--red));
+    /* background-size:cover; */
     position: fixed;
     width: 100vw;
    
@@ -34,7 +44,7 @@ body {
 nav ul{
     display: flex;
     list-style: none;
-    align-items:center;
+    /* align-items:center; */
    
 }
 
@@ -82,11 +92,6 @@ img {
 }
 
 
-.mug-shot{
-    margin: 1rem;
-    
-
-}
 
 .container{
     padding: 1rem 1rem;
@@ -95,6 +100,15 @@ img {
 ul{
     list-style-type: none;
 }
+
+
+.mug-shot {
+    padding: 1rem 1rem;
+    
+}
+
+
+
 
 /* contact page */
 
@@ -113,7 +127,7 @@ align-items: center;
 .contact-items {
     text-align: center;
     list-style: none;
-    font-size: xx-large;
+    font-size: 2rem;
     border-style: solid;
     border: 5px rgba(231, 228, 8, 0.822) solid;
      
@@ -139,6 +153,7 @@ align-items: center;
 
 .project{
     padding-top: 1rem;
+    border-bottom: 4px red solid;
 }
 
 footer{
