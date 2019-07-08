@@ -1,74 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>index2</title>
-    <link rel="stylesheet" href="index.css">
+    <title>Lawrence</title>
+    <link rel="stylesheet" href="./cs/main.css">
+
 </head>
 
-
 <body>
-    <header class="main-header">
-        <h1 class = "title">LAWRENCE MBOYA I</h1>
-        <nav class = "nav-link">
-            <ul> 
-                <li class ="nav-link_list">  <a href="index.html"> HOME  </a> </li>
-                <li class ="nav-link_list"> <a href="projects.html"> PROJECTS</a> </li>
-                <li class ="nav-link_list"> <a href="./contact.html"> CONTACT ME </a> </li>
-            </ul>
-           
-        </nav>
-    
-    </header>
-
-    <section class="hero-image">
-        <h3 class = "hero-head-1"> EVERYTHING YOU WANT IS ON THE OTHER SIDE OF FEAR</h3>
-        <h4 class = "hero-head-2"> LET'S BUILD SOMETHING TOGETHER </h4>
-
-    </section>
-
     <div class="container">
 
-        <article>
-            <h3 class= "header-article1">About:</h3>
-            <p>Lawrence Mboya is a hard working and dedicated software develper. <br> Trained in the basis of Object Oriented Programing (OOP) and Test Driven Programming (TTD). <br>
-              Compitent in multiple languages such as:</p> <br>
-            <ul>
-                <li>Java</li>
-                <li>HTML</li>
-                <li>CSS</li>
-                
-                <li>Java Script</li>
-            </ul>
+        <header class="main_header">
 
-            <br>
-    
-            <p> He is also an expirienced fraud specialist with over 3 years working experience determining and stopping fraud in electronic money movement. <br> Currently working for JP Morgan & Chase, and living in Colombus, Ohio.</p>
-            
-           
-        </article>
-    
+            <h1 class="main_header__heading">LAWRENCE MBOYA</h1>
+
+            <nav class="nav_link">
+                <ul class="nav_link_list">
+
+                    <li class="nav_link__item"> <a href="#Home"> HOME </a></li>
+                    <li class="nav_link__item"> <a href="#About"> ABOUT </a></li>
+                    <li class="nav_link__item"> <a href="#Projects"> PROJECTS </a></li>
+                    <li class="nav_link__item"> <a href="#Contacts"> CONTACTS </a></li>
+
+                </ul>
+
+            </nav>
+        </header>
+
+        <div class="hero-image">
+            <img class="image-hero" src="./Blue-sky.jpg" alt="NYC_picture">
+            <h4 class="hero-head-2"> <a name="Home"> LET'S BUILD SOMETHING TOGETHER </a></h4>
+
+        </div>
+
+        <main>
+            <article class="About">
+                <h3 class="Head__About"> <a name="About"> ABOUT </a> </h3> <br>
+                <p>
+                    Full stack java developer practicing the fundamentals of Object Oriented programming (OOP) and Test
+                    Driven Development (TDD) while maintain clean code principle. Competent in back end front end with
+                    proven ability to work with Java, HTML, CSS and Java Script. <br> <br>
+
+                    Exceptional detection, investigation and reconciliation skills gained from working as a fraud
+                    specialist
+                    for over 2 years at J.P.Morgan and Chase. Well versed in accounting knowledge, linking the gap
+                    between
+                    technology and business. <br> <br>
+
+                    Enjoy working in a team environment solving complicated problems and meeting deadlines. Open,
+                    curious
+                    and driven to learn every day. <br> <br>
+
+                    Currently working for JP Morgan & Chase, and living in Colombus, Ohio.
+                </p>
+
+            </article>
+
+            <h3 class="Projects_head"> <a name="Projects"> PROJECTS </a></h3>
+
+            <div class="TabContainer">
+                <div class="buttonContainer">
+                    <button onclick="showPanel (0, '#f44336')">Virtual Pet</button>
+                    <button onclick="showPanel (1, '#4caf50')">University Clinic Hospital</button>
+                    <button onclick="showPanel (2, '#ff5722')">Furtune Teller</button>
+                </div>
+
+                <div class="TabPanel">
+                    <p>worked in a team of 5 to develope a program that represent a pet. User can interact with the pet
+                        to give a drink, feed, play or take it to bed. <br></p>
+                    <p> Skills: TDD, OOP, Java collections (maps, arrays and array lists) </p>
+                    <p> Technology: Java, eclipse, github, and gitbush </p> <br>
+
+                    <img class="virtualPetImage" src="Virtual-pet.JPG" alt="virtualPet.image">
+                    <br>
+                    <br>
+                    <a href="https://github.com/lawrencemboya/virtual-pet"> Github link</a>
+                </div>
+
+                <div class="TabPanel">
+                    <a href="https://github.com/lawrencemboya/university-clinic-hospital"> Github link </a>
+                    <p> Worked in a team of 3 to develope a program that maintain all hospital employees and patient.
+                        User can add, pay or assign a task to employees and provide care to patient.</p>
+                    <p> Skills: TDD, OOP, Java collections (maps, arrays and array lists) </p>
+                    <p> Technology: Java, eclipse, github, and gitbush </p> <br>
+
+                    <img class="universityImage" src="Univeristy-clinic.JPG" alt="University.image">
+                    <br>
+                    <br>
+
+                </div>
+
+                <div class="TabPanel">
+                    <p> Developed a program that interacts with users and use the input to predict the future.</p>
+                    <p> Skills: TDD, OOP, Java collections (maps, arrays and array lists) </p>
+                    <p> Technology: Java, eclipse, github, and gitbush </p> <br>
+
+                    <img class="FortuneTellerImage" src="Fortune.JPG" alt="FurtuneTeller.Image">
+                    <br>
+                    <br>
+                    <a href="https://github.com/lawrencemboya/FutuneTeller"> Github link </a>
+                </div>
+
+            </div>
+
+            <article class="Tech_stack">
+                <h3 class="Head__Tech_Stack"> TECH STACK</h3> <br>
+                <p>
+                    Java • Spring • Hibernate • JPA • JavaScript • MVC • HTML • CSS • Flexbox • Grid • TDD • Agile
+                    (Scrum) •
+                    Object Oriented Programming (OOP) • AJAX • JSON • Restful APIs • Responsive Design / Mobile •
+                    Structured
+                    Query Language (SQL) • Relational Databases • Source Control / Git
+                </p>
+
+            </article>
+
+        </main>
+
+        <footer> <a name="Contacts"></a>
+            <small>
+                <ul class="contact_list">
+                    <li>
+                    <li class="contact-items"> <a href="mailto:https://lawrencemboya@gmail.com" target="_blank"> <i
+                                class="fas fa-envelope-open-text"> </i> </a></li>
+                    </li>
+                    <li>
+                    <li class="contact-items"> <a href="tel:+614-822-5611"> <i class="fas fa-phone-volume"> </i></a>
+                    </li>
+                    </li>
+                    <li>
+                    <li class="contact-items"> <a href="https://www.linkedin.com/in/lawrencemboya1" target="_blank"> <i
+                                class="fab fa-linkedin"> </i></li>
+                    </li>
+                    <li>
+                    <li class="contact-items"> <a href="https://github.com/lawrencemboya" target="_blank"> <i
+                                class="fab fa-github"> </i> </a></li>
+                    </li>
+                </ul>
+
+            </small>
+        </footer>
+
+
+        <script src="./js/index.js"></script>
+        <script src="https://kit.fontawesome.com/16a4d9ec79.js"></script>
     </div>
-    
-    <section class = "mug-shot">
-
-    <img class = "profile-picture" src="lawrence.jpg" alt="Lawrence">
-    <p>LAWRENCE MBOYA</p>
-    <p>Software Developer</p>
-    
-    </section>
-    
-    
-    <footer >
-        <p> <small> &copy; All rights reserved </small> </p>
-
-
-    </footer>
-
-
-
-    
 </body>
+
 </html>
