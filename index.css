@@ -14,147 +14,129 @@ html{
     --mid: #676767;
     --dark: #1D1A31;
 
-    color: var(--dark);
     font: 20px/1 sans-serif;
+    
 }
 
 body {
     background-color: #2222;
 }
 
-.title{
-    font-style: oblique;
-    color: orangered;
-    /* size: 189rem; */
-    
-    
+ul{
+    list-style: none;
 }
 
-.main-header {
-    
-    display: flex;
+.main_header{
+    align-items: center;
+    display:flex;
     justify-content: space-between;
-    background-image: linear-gradient(45deg, var(--blue), var(--red));
-    /* background-size:cover; */
+    background-image: linear-gradient(45deg, var(--blue), var(--red));   
     position: fixed;
     width: 100vw;
-   
 }
 
-nav ul{
+.main_header__heading{
+    font-style: oblique;
+    color: orangered;
+}
+
+.nav_link_list{
     display: flex;
-    list-style: none;
-    /* align-items:center; */
    
 }
 
-.nav-link_list{
-    padding: 0.4rem;
-    
+.nav_link__item{
+   padding: 0.5rem;
+}
+
+a:hover{ color: yellow;
 }
 
 a{
     text-decoration: none;
     list-style: none;
-    color: rgb(51, 255, 0);
     font-size: 1rem;
-}
-
-a:hover{ color: yellow;
-
 }
 
 article{
     background-color: #1111;
 }
 
+.About{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.Tech_stack{
+    padding-bottom: 1rem; 
+}
+
+.TabContainer{
+    width: 100%;
+    height: 350px;
+}
+
+.buttonContainer{
+    height: 15%;
+}
+
+.buttonContainer button {
+    width: 25%;
+    height: 100%;
+    float: left;
+    outline: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+    
+}
+
+button:hover {
+    background-color:grey;
+}
+
+.TabPanel{
+    height: 85%;
+    background-color:slategrey;
+    color: wheat;
+    text-align: center;
+    padding-top: 10px;
+    
+    box-sizing: border-box;
+    font-size: 15px;
+    display: none;
+}
+
+.Projects_head{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+img{
+    max-width: 100%;
+}
 
 .hero-image{
-    background-image: url(NY.jpg);
+    /* background-image: url(/Blue-sky.jpg); */
     background-size: cover;
-    height : 50vh ;
+    height : 90vh ;
     display: flex;
     align-items:center;
     flex-direction: column;
     justify-content: center;
 }
 
-img {
-    width: 10vw;
-    height: 30vh;
-
+.image-hero{
+  height: 90vh;  
+  width: 100%;
+  
 }
 
-.profile-picture{
-    border-style: solid;
-    border: 1px red solid;
-    margin-bottom: none;
-}
-
-
-
-.container{
-    padding: 1rem 1rem;
-}
-
-ul{
-    list-style-type: none;
-}
-
-
-.mug-shot {
-    padding: 1rem 1rem;
-    
-}
-
-
-
-
-/* contact page */
-
-
-
-.contact-links{
-display: flex;
-background-image: url(link.jpg);
-height: 100vh;
-background-size: contain;
-justify-content: center;
-align-items: center;
-
-}
-
-.contact-items {
-    text-align: center;
-    list-style: none;
-    font-size: 2rem;
-    border-style: solid;
-    border: 5px rgba(231, 228, 8, 0.822) solid;
-     
-}
-
-
-/* project page */
-
-.virtualPetImage {
-    width: 800px;
-    height: 500px;
-}
-
-.universityImage {
-    width: 800px;
-    height: 500px;  
-}
-
-.FortuneTellerImage {
-    width: 800px;
-    height: 400px;
-}
-
-.project{
+.Tech_stack{
     padding-top: 1rem;
-    border-bottom: 4px red solid;
+    padding-bottom: 1rem;
 }
+
 
 footer{
     display: flex;
@@ -162,3 +144,12 @@ footer{
     justify-content: center;
 
 }
+
+.contact_list{
+    display: flex;
+}
+
+.contact-items{
+    margin: 1rem;
+}
+
