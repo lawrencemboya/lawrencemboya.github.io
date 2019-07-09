@@ -49,6 +49,18 @@ ul{
    padding: 0.5rem;
 }
 
+.header-anchor {
+    position: relative;
+    top: -2rem;
+    visibility: hidden;
+}
+
+.home-anchor {
+    position: relative;
+    top: -16rem;
+    visibility: hidden;
+}
+
 .nav_link__item a {
     color: orange;
 }
